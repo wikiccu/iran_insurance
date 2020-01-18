@@ -30,12 +30,23 @@ namespace Forpractice1
 
         private void btnsabt_Click(object sender, EventArgs e)
         {
-            try  //برای مدیریت خطا
-            {
+            string noe;
+            //try  //برای مدیریت خطا
+            //{
                 OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + Application.StartupPath + "\\Database.accdb");  //کدهای اتصال به پایگاه داده ها
                 con.Open();
                 OleDbCommand com = new OleDbCommand();
-                com.CommandText = "insert into table1(id,name,family,mobile,comodity,price,totalprice,tedad) values('" + txtid.Text + "','" + txtname.Text + "','" + txtfamily.Text + "','" + txtmobile.Text + "','" + txtcomodity.Text + "','" + txtprice.Text + "','" + txttotalprice.Text + "','" + txtcount.Text + "')"; // کد درج در پایگاه داده ها
+                if (naghd.Checked)
+                {
+                     noe = "نقد";
+
+                }
+                else
+                {
+                     noe = "چک";
+
+                }
+                com.CommandText = "insert into table1(name,family,mobile,codemeli,noebime,Price,noepardakht) values('" + txtname.Text + "','" + txtfamily.Text + "','" + txtmobile.Text + "','" + Codemeli.Text + "','" + Price.Text + "','" + Price.Text + "','" + noe + "')"; // کد درج در پایگاه داده ها
                 com.Connection = con;
                 com.ExecuteNonQuery();
                 con.Close();
@@ -44,15 +55,15 @@ namespace Forpractice1
                 txtfamily.Clear();
                 txtmobile.Clear();
                 txtcomodity.Clear();
-                txtcount.Clear();
-                txtprice.Clear();
-                txttotalprice.Clear();
-                txtid.Clear();
-            }
-            catch  //برای مدیریت خطا
-            {
-                MessageBox.Show("خطا در اتصال به بانک اطلاعاتی");
-            }
+                //txtcount.Clear();
+                Price.Clear();
+                //txttotalprice.Clear();
+                //txtid.Clear();
+            //}
+            //catch  //برای مدیریت خطا
+            //{
+            //    MessageBox.Show("خطا در اتصال به بانک اطلاعاتی");
+            //}
             
         }
 
@@ -71,6 +82,16 @@ namespace Forpractice1
             da.Fill(ds, "table1");
             dataGridView1.DataSource = ds.Tables["table1"].DefaultView;
             con.Close();
+            dataGridView1.Columns[0].HeaderText = "کد";
+            dataGridView1.Columns[1].HeaderText = "نام";
+            dataGridView1.Columns[2].HeaderText = "نام خانوادگی";
+            dataGridView1.Columns[3].HeaderText = "موبایل";
+            dataGridView1.Columns[4].HeaderText = "کد ملی";
+            dataGridView1.Columns[5].HeaderText = "نوع بیمه";
+            dataGridView1.Columns[6].HeaderText = "مبلغ";
+            dataGridView1.Columns[7].HeaderText = "نوع پرداخت";
+            
+
         }
 
         private void btnhazf_Click(object sender, EventArgs e)
@@ -79,29 +100,30 @@ namespace Forpractice1
             OleDbCommand com = new OleDbCommand();
             com.Connection = con;
             int item;
-            com.CommandText = "select count(id) from table1 where id=" + txtid.Text + "";
+           //com.CommandText = "select count(id) from table1 where id=" + txtid.Text + "";
             con.Open();
             item = (int)com.ExecuteScalar();
             con.Close();
             if (item != 0)
             {
-                com.CommandText = "delete from table1 where id=" + txtid.Text + "";   //کدهای حذف از پایگاه داده ها
+              //  com.CommandText = "delete from table1 where id=" + txtid.Text + "";   //کدهای حذف از پایگاه داده ها
                 con.Open();
                 com.ExecuteNonQuery();
                 con.Close();
                 MessageBox.Show("حذف با موفقیت انجام شد");
 
             }
-            txtid.Clear();
+            //txtid.Clear();
             txtname.Clear();
             txtfamily.Clear();
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            txtid.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
-            txtname.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
-            txtfamily.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+            label10.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+            //txtid.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+            //txtname.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+            //txtfamily.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
             
         }
 
@@ -109,10 +131,10 @@ namespace Forpractice1
         {
             try //برای مدیریت خطا
             {
-               int a = int.Parse(txtcount .Text);
-               int c = int.Parse(txtprice .Text);
-               int sum = (a * c);
-                txttotalprice .Text = sum.ToString();
+               //int a = int.Parse(txtcount .Text);
+               int c = int.Parse(Price .Text);
+               //int sum = (a * c);
+                //txttotalprice .Text = sum.ToString();
             }
             catch //برای مدیریت خطا
             {
@@ -125,6 +147,44 @@ namespace Forpractice1
             {
                 e.Handled = true;
             }
+        }
+
+        private void txtname_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtfamily_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txttotalprice_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int myInt = int.Parse(Price.Text) - int.Parse(textBox1.Text);
+                textBox2.Text = myInt.ToString();
+            }
+            catch
+            {
+            }
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            
+          
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
         }
 
         
