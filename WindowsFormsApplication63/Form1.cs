@@ -96,27 +96,35 @@ namespace Forpractice1
 
         private void btnhazf_Click(object sender, EventArgs e)
         {
-            OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + Application.StartupPath + "\\Database.accdb");  //کدهای اتصال به پایگاه داده ها  
-            OleDbCommand com = new OleDbCommand();
-            com.Connection = con;
-            int item;
-           //com.CommandText = "select count(id) from table1 where id=" + txtid.Text + "";
-            con.Open();
-            item = (int)com.ExecuteScalar();
-            con.Close();
-            if (item != 0)
+            try
             {
-              //  com.CommandText = "delete from table1 where id=" + txtid.Text + "";   //کدهای حذف از پایگاه داده ها
-                con.Open();
-                com.ExecuteNonQuery();
-                con.Close();
-                MessageBox.Show("حذف با موفقیت انجام شد");
 
+                OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + Application.StartupPath + "\\Database.accdb");  //کدهای اتصال به پایگاه داده ها  
+                OleDbCommand com = new OleDbCommand();
+                com.Connection = con;
+                int item;
+                com.CommandText = "select count(id) from table1 where id=" + label10.Text + "";
+                con.Open();
+                item = (int)com.ExecuteScalar();
+                con.Close();
+                if (item != 0)
+                {
+                    com.CommandText = "delete from table1 where id=" + label10.Text + "";   //کدهای حذف از پایگاه داده ها
+                    con.Open();
+                    com.ExecuteNonQuery();
+                    con.Close();
+                    MessageBox.Show("حذف با موفقیت انجام شد");
+
+                }
+                //txtid.Clear();
+                txtname.Clear();
+                txtfamily.Clear();
             }
-            //txtid.Clear();
-            txtname.Clear();
-            txtfamily.Clear();
+            catch
+            {
+            }
         }
+
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
