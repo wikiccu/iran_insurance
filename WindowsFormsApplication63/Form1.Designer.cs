@@ -37,7 +37,7 @@
             this.txtname = new System.Windows.Forms.TextBox();
             this.txtfamily = new System.Windows.Forms.TextBox();
             this.txtmobile = new System.Windows.Forms.TextBox();
-            this.txtcomodity = new System.Windows.Forms.TextBox();
+            this.txtnobime = new System.Windows.Forms.TextBox();
             this.Price = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.btnnamayesh = new System.Windows.Forms.Button();
@@ -118,7 +118,7 @@
             this.txtname.Name = "txtname";
             this.txtname.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtname.Size = new System.Drawing.Size(148, 20);
-            this.txtname.TabIndex = 8;
+            this.txtname.TabIndex = 0;
             this.txtname.TextChanged += new System.EventHandler(this.txtname_TextChanged);
             // 
             // txtfamily
@@ -128,7 +128,7 @@
             this.txtfamily.Name = "txtfamily";
             this.txtfamily.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtfamily.Size = new System.Drawing.Size(148, 20);
-            this.txtfamily.TabIndex = 9;
+            this.txtfamily.TabIndex = 1;
             this.txtfamily.TextChanged += new System.EventHandler(this.txtfamily_TextChanged);
             // 
             // txtmobile
@@ -136,30 +136,32 @@
             this.txtmobile.Location = new System.Drawing.Point(55, 116);
             this.txtmobile.Margin = new System.Windows.Forms.Padding(2);
             this.txtmobile.Name = "txtmobile";
+            this.txtmobile.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtmobile.Size = new System.Drawing.Size(148, 20);
-            this.txtmobile.TabIndex = 10;
+            this.txtmobile.TabIndex = 7;
             // 
-            // txtcomodity
+            // txtnobime
             // 
-            this.txtcomodity.Location = new System.Drawing.Point(39, 112);
-            this.txtcomodity.Margin = new System.Windows.Forms.Padding(2);
-            this.txtcomodity.Name = "txtcomodity";
-            this.txtcomodity.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtcomodity.Size = new System.Drawing.Size(148, 20);
-            this.txtcomodity.TabIndex = 11;
+            this.txtnobime.Location = new System.Drawing.Point(39, 112);
+            this.txtnobime.Margin = new System.Windows.Forms.Padding(2);
+            this.txtnobime.Name = "txtnobime";
+            this.txtnobime.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtnobime.Size = new System.Drawing.Size(148, 20);
+            this.txtnobime.TabIndex = 3;
             // 
             // Price
             // 
             this.Price.Location = new System.Drawing.Point(39, 146);
             this.Price.Margin = new System.Windows.Forms.Padding(2);
             this.Price.Name = "Price";
+            this.Price.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.Price.Size = new System.Drawing.Size(148, 20);
-            this.Price.TabIndex = 13;
+            this.Price.TabIndex = 4;
             this.Price.TextChanged += new System.EventHandler(this.txtprice_TextChanged);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(18, 255);
+            this.button1.Location = new System.Drawing.Point(525, 276);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(92, 26);
@@ -170,7 +172,7 @@
             // 
             // btnnamayesh
             // 
-            this.btnnamayesh.Location = new System.Drawing.Point(210, 255);
+            this.btnnamayesh.Location = new System.Drawing.Point(717, 276);
             this.btnnamayesh.Margin = new System.Windows.Forms.Padding(2);
             this.btnnamayesh.Name = "btnnamayesh";
             this.btnnamayesh.Size = new System.Drawing.Size(92, 26);
@@ -190,9 +192,9 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.txtname);
-            this.groupBox1.Controls.Add(this.txtcomodity);
+            this.groupBox1.Controls.Add(this.txtnobime);
             this.groupBox1.Controls.Add(this.txtfamily);
-            this.groupBox1.Location = new System.Drawing.Point(344, 33);
+            this.groupBox1.Location = new System.Drawing.Point(603, 33);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(302, 195);
             this.groupBox1.TabIndex = 16;
@@ -213,8 +215,9 @@
             this.Codemeli.Location = new System.Drawing.Point(39, 84);
             this.Codemeli.Margin = new System.Windows.Forms.Padding(2);
             this.Codemeli.Name = "Codemeli";
+            this.Codemeli.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.Codemeli.Size = new System.Drawing.Size(148, 20);
-            this.Codemeli.TabIndex = 14;
+            this.Codemeli.TabIndex = 2;
             // 
             // groupBox2
             // 
@@ -239,8 +242,9 @@
             this.textBox2.Location = new System.Drawing.Point(55, 88);
             this.textBox2.Margin = new System.Windows.Forms.Padding(2);
             this.textBox2.Name = "textBox2";
+            this.textBox2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.textBox2.Size = new System.Drawing.Size(148, 20);
-            this.textBox2.TabIndex = 16;
+            this.textBox2.TabIndex = 6;
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label8
@@ -259,8 +263,9 @@
             this.textBox1.Location = new System.Drawing.Point(55, 58);
             this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
+            this.textBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.textBox1.Size = new System.Drawing.Size(148, 20);
-            this.textBox1.TabIndex = 14;
+            this.textBox1.TabIndex = 5;
             // 
             // label7
             // 
@@ -306,7 +311,7 @@
             // 
             // btnsabt
             // 
-            this.btnsabt.Location = new System.Drawing.Point(313, 255);
+            this.btnsabt.Location = new System.Drawing.Point(813, 276);
             this.btnsabt.Margin = new System.Windows.Forms.Padding(2);
             this.btnsabt.Name = "btnsabt";
             this.btnsabt.Size = new System.Drawing.Size(92, 26);
@@ -320,14 +325,14 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(18, 313);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(628, 230);
+            this.dataGridView1.Size = new System.Drawing.Size(887, 230);
             this.dataGridView1.TabIndex = 19;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // btnhazf
             // 
-            this.btnhazf.Location = new System.Drawing.Point(114, 255);
+            this.btnhazf.Location = new System.Drawing.Point(621, 276);
             this.btnhazf.Margin = new System.Windows.Forms.Padding(2);
             this.btnhazf.Name = "btnhazf";
             this.btnhazf.Size = new System.Drawing.Size(92, 26);
@@ -350,7 +355,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::WindowsFormsApplication63.Properties.Resources.nature1;
-            this.ClientSize = new System.Drawing.Size(658, 556);
+            this.ClientSize = new System.Drawing.Size(917, 555);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.btnhazf);
             this.Controls.Add(this.dataGridView1);
@@ -386,7 +391,7 @@
         private System.Windows.Forms.TextBox txtname;
         private System.Windows.Forms.TextBox txtfamily;
         private System.Windows.Forms.TextBox txtmobile;
-        private System.Windows.Forms.TextBox txtcomodity;
+        private System.Windows.Forms.TextBox txtnobime;
         private System.Windows.Forms.TextBox Price;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnnamayesh;

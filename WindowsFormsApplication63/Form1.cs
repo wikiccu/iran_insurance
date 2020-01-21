@@ -46,7 +46,7 @@ namespace Forpractice1
                      noe = "چک";
 
                 }
-                com.CommandText = "insert into table1(name,family,mobile,codemeli,noebime,Price,noepardakht) values('" + txtname.Text + "','" + txtfamily.Text + "','" + txtmobile.Text + "','" + Codemeli.Text + "','" + Price.Text + "','" + Price.Text + "','" + noe + "')"; // کد درج در پایگاه داده ها
+                com.CommandText = "insert into table1(name,family,mobile,codemeli,noebime,Price,noepardakht,pardakhti,baghimande) values('" + txtname.Text + "','" + txtfamily.Text + "','" + txtmobile.Text + "','" + Codemeli.Text + "','" + txtnobime.Text + "','" + Price.Text + "','" + noe +"','"+textBox1.Text+"','"+textBox2.Text+"')"; // کد درج در پایگاه داده ها
                 com.Connection = con;
                 com.ExecuteNonQuery();
                 con.Close();
@@ -54,11 +54,11 @@ namespace Forpractice1
                 txtname.Clear();  //پاک کردن تکست باکس ها
                 txtfamily.Clear();
                 txtmobile.Clear();
-                txtcomodity.Clear();
-                //txtcount.Clear();
+                txtnobime.Clear();
+                Codemeli.Clear();
                 Price.Clear();
-                //txttotalprice.Clear();
-                //txtid.Clear();
+                textBox1.Clear();
+                textBox2.Clear();
             //}
             //catch  //برای مدیریت خطا
             //{
@@ -90,6 +90,9 @@ namespace Forpractice1
             dataGridView1.Columns[5].HeaderText = "نوع بیمه";
             dataGridView1.Columns[6].HeaderText = "مبلغ";
             dataGridView1.Columns[7].HeaderText = "نوع پرداخت";
+            dataGridView1.Columns[8].HeaderText = "پرداختی";
+            dataGridView1.Columns[9].HeaderText = "باقی مانده";
+
             
 
         }
@@ -114,6 +117,7 @@ namespace Forpractice1
                     com.ExecuteNonQuery();
                     con.Close();
                     MessageBox.Show("حذف با موفقیت انجام شد");
+                    btnnamayesh_Click(sender,e);
 
                 }
                 //txtid.Clear();
