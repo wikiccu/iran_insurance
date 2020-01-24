@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApplication63", "WindowsFormsApplication63\WindowsFormsApplication63.csproj", "{728B8BB0-BEE6-4A18-B2CD-1F8E0D6CEA61}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "BimeSetup", "BimeSetup\BimeSetup.vdproj", "{1E134CF8-701E-487B-8A21-605029FF6866}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +21,10 @@ Global
 		{728B8BB0-BEE6-4A18-B2CD-1F8E0D6CEA61}.Release|Any CPU.Build.0 = Release|Any CPU
 		{728B8BB0-BEE6-4A18-B2CD-1F8E0D6CEA61}.Release|x86.ActiveCfg = Release|x86
 		{728B8BB0-BEE6-4A18-B2CD-1F8E0D6CEA61}.Release|x86.Build.0 = Release|x86
+		{1E134CF8-701E-487B-8A21-605029FF6866}.Debug|Any CPU.ActiveCfg = Debug
+		{1E134CF8-701E-487B-8A21-605029FF6866}.Debug|x86.ActiveCfg = Debug
+		{1E134CF8-701E-487B-8A21-605029FF6866}.Release|Any CPU.ActiveCfg = Release
+		{1E134CF8-701E-487B-8A21-605029FF6866}.Release|x86.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
