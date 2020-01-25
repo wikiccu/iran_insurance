@@ -81,6 +81,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_B5512D8611F342F2BC0D68C78AA8FC0E"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_B7468BCEB469445187941DFD403C32B3"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -100,25 +106,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_AD3C1509F8AF450B9F913D273F0F5DFE"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_128B9A5E062C9520AD8190169F3A4EF7"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_550D3A64514EEF9975A2F08D07FE835B"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_5B967E72DDD259B7F1CEEAFDF002F05C"
+        "OwnerKey" = "8:_F4F643B76444A285B7BC5DBE996319D2"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -130,7 +118,25 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_F4F643B76444A285B7BC5DBE996319D2"
+        "OwnerKey" = "8:_5B967E72DDD259B7F1CEEAFDF002F05C"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_550D3A64514EEF9975A2F08D07FE835B"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_128B9A5E062C9520AD8190169F3A4EF7"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_AD3C1509F8AF450B9F913D273F0F5DFE"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -151,6 +157,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
         "Release"
         {
@@ -167,6 +181,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
     }
     "Deployable"
@@ -203,11 +225,6 @@
             "AssemblyAsmDisplayName" = "8:ShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304"
                 "ScatterAssemblies"
                 {
-                    "_08E5EDE20CD9F18C4A56F4562A8056E9"
-                    {
-                    "Name" = "8:ShockwaveFlashObjects.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:ShockwaveFlashObjects.dll"
             "TargetName" = "8:"
@@ -265,11 +282,6 @@
             "AssemblyAsmDisplayName" = "8:DevComponents.DotNetBar2, Version=7.8.0.2, Culture=neutral, PublicKeyToken=5fd520d36328f741, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_550D3A64514EEF9975A2F08D07FE835B"
-                    {
-                    "Name" = "8:DevComponents.DotNetBar2.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:DevComponents.DotNetBar2.dll"
             "TargetName" = "8:"
@@ -296,11 +308,6 @@
             "AssemblyAsmDisplayName" = "8:FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304"
                 "ScatterAssemblies"
                 {
-                    "_5B967E72DDD259B7F1CEEAFDF002F05C"
-                    {
-                    "Name" = "8:FlashControlV71.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:FlashControlV71.dll"
             "TargetName" = "8:"
@@ -367,11 +374,6 @@
             "AssemblyAsmDisplayName" = "8:stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
                 "ScatterAssemblies"
                 {
-                    "_9FD2DA9BD93A7031A860A6C35FA767DA"
-                    {
-                    "Name" = "8:stdole.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:stdole.dll"
             "TargetName" = "8:"
@@ -411,6 +413,26 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_B5512D8611F342F2BC0D68C78AA8FC0E"
+            {
+            "SourcePath" = "8:..\\WindowsFormsApplication63\\bin\\x86\\Debug\\CrystalReport1.rpt"
+            "TargetName" = "8:CrystalReport1.rpt"
+            "Tag" = "8:"
+            "Folder" = "8:_A5068BCD443C4701AFE2E9A6C3DA57AB"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_B7468BCEB469445187941DFD403C32B3"
             {
             "SourcePath" = "8:..\\WindowsFormsApplication63\\bin\\x86\\Debug\\Database.accdb"
@@ -438,11 +460,6 @@
             "AssemblyAsmDisplayName" = "8:CrystalDecisions.ReportAppServer.Prompting, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_F4F643B76444A285B7BC5DBE996319D2"
-                    {
-                    "Name" = "8:CrystalDecisions.ReportAppServer.Prompting.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:CrystalDecisions.ReportAppServer.Prompting.dll"
             "TargetName" = "8:"
