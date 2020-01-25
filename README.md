@@ -1,5 +1,8 @@
-# Iran  insurance
+## Person
 
-[ ] - making search for cusetomer By name and family 
-[ ] - making edit for cusetomer
-[ ] - making report for search part and attach customer to it
+- [x] Richard Stallman
+- [x] Erwin Schrödinger
+- [x] Linus Torvalds
+- [x] Eric Raymond
+- [x] Margaret Hamilton
+- [x] Robert Griesemer
