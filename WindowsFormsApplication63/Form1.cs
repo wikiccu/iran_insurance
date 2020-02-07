@@ -12,6 +12,7 @@ namespace Forpractice1
 {
     public partial class Form1 : Form
     {
+        string intToPass;
         public Form1()
         {
             InitializeComponent();
@@ -70,9 +71,9 @@ namespace Forpractice1
         private void Form1_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'databaseDataSet.Table1' table. You can move, or remove it, as needed.
-            
+            intToPass = "0";
 
-        }
+        } 
 
         private void btnnamayesh_Click(object sender, EventArgs e)
         {
@@ -133,6 +134,9 @@ namespace Forpractice1
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             label10.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+            intToPass =  label10.Text ;
+             
+            
             //txtid.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
             //txtname.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
             //txtfamily.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
@@ -197,6 +201,46 @@ namespace Forpractice1
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            groupBox3.Visible = true;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (textBox5.Text != "" || textBox4.Text!="" )
+            {
+                OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + Application.StartupPath + "\\Database.accdb");  //کدهای اتصال به پایگاه داده ها  
+                OleDbDataAdapter da = new OleDbDataAdapter("select * from table1 where name='" + textBox5.Text + "' OR family='" + textBox4.Text+"'", con); // کدهای نمایش در دیتا گرید ویو
+                DataSet ds = new DataSet();
+                da.Fill(ds, "table1");
+                dataGridView1.DataSource = ds.Tables["table1"].DefaultView;
+                con.Close();
+                dataGridView1.Columns[0].HeaderText = "کد";
+                dataGridView1.Columns[1].HeaderText = "نام";
+                dataGridView1.Columns[2].HeaderText = "نام خانوادگی";
+                dataGridView1.Columns[3].HeaderText = "موبایل";
+                dataGridView1.Columns[4].HeaderText = "کد ملی";
+                dataGridView1.Columns[5].HeaderText = "نوع بیمه";
+                dataGridView1.Columns[6].HeaderText = "مبلغ";
+                dataGridView1.Columns[7].HeaderText = "نوع پرداخت";
+                dataGridView1.Columns[8].HeaderText = "پرداختی";
+                dataGridView1.Columns[9].HeaderText = "باقی مانده";
+            }
+
+
+
+
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            formmoshtari frm = new formmoshtari(); // برای نمایش فرم
+            frm.str(intToPass);
+            frm.Show();
         }
 
         

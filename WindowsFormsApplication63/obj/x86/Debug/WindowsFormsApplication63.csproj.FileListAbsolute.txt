@@ -75,9 +75,7 @@ C:\Users\saeed\Documents\GitHub\iran_insurance\WindowsFormsApplication63\bin\x86
 C:\Users\saeed\Documents\GitHub\iran_insurance\WindowsFormsApplication63\bin\x86\Debug\DevComponents.DotNetBar2.dll
 C:\Users\saeed\Documents\GitHub\iran_insurance\WindowsFormsApplication63\obj\x86\Debug\WindowsFormsApplication63.csprojResolveAssemblyReference.cache
 C:\Users\saeed\Documents\GitHub\iran_insurance\WindowsFormsApplication63\obj\x86\Debug\Forpractice1.Form1.resources
-C:\Users\saeed\Documents\GitHub\iran_insurance\WindowsFormsApplication63\obj\x86\Debug\Forpractice1.formlostejoo.resources
 C:\Users\saeed\Documents\GitHub\iran_insurance\WindowsFormsApplication63\obj\x86\Debug\Forpractice1.formmoshtari.resources
-C:\Users\saeed\Documents\GitHub\iran_insurance\WindowsFormsApplication63\obj\x86\Debug\Forpractice1.formrahnamaei.resources
 C:\Users\saeed\Documents\GitHub\iran_insurance\WindowsFormsApplication63\obj\x86\Debug\Forpractice1.mainform.resources
 C:\Users\saeed\Documents\GitHub\iran_insurance\WindowsFormsApplication63\obj\x86\Debug\WindowsFormsApplication63.Properties.Resources.resources
 C:\Users\saeed\Documents\GitHub\iran_insurance\WindowsFormsApplication63\obj\x86\Debug\WindowsFormsApplication63.csproj.GenerateResource.Cache

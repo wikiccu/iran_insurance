@@ -121,23 +121,11 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="formlostejoo.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="formlostejoo.designer.cs">
-      <DependentUpon>formlostejoo.cs</DependentUpon>
-    </Compile>
     <Compile Include="formmoshtari.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="formmoshtari.designer.cs">
       <DependentUpon>formmoshtari.cs</DependentUpon>
-    </Compile>
-    <Compile Include="formrahnamaei.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="formrahnamaei.designer.cs">
-      <DependentUpon>formrahnamaei.cs</DependentUpon>
     </Compile>
     <Compile Include="mainform.cs">
       <SubType>Form</SubType>
@@ -154,14 +142,8 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="formlostejoo.resx">
-      <DependentUpon>formlostejoo.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="formmoshtari.resx">
       <DependentUpon>formmoshtari.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="formrahnamaei.resx">
-      <DependentUpon>formrahnamaei.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="mainform.resx">
       <DependentUpon>mainform.cs</DependentUpon>

@@ -15,17 +15,27 @@ namespace Forpractice1
     {
         OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + Application.StartupPath + "\\Database.accdb");  //کدهای اتصال به پایگاه داده ها
         DataSet dd = new DataSet();
-       
-        
+         
+        string str1;
         public formmoshtari()
         {
             InitializeComponent();
         }
 
+
+        public void str(string a)
+        {
+            str1 = a.ToString();
+
+
+        }
+
+
         private void formmoshtari_Load(object sender, EventArgs e)
         {
-            //try //برای مدیریت خطا
-            //{
+            
+            try //برای مدیریت خطا
+            {
                 con.Open();
                 ReportDocument rp1 = new ReportDocument();
                 //rp1.FileName = "CrystalReport1.rpt";
@@ -36,15 +46,15 @@ namespace Forpractice1
                 crystalReportViewer1.Show();
 
 
-                OleDbDataAdapter dA = new OleDbDataAdapter("select * from table1", con);
+                OleDbDataAdapter dA = new OleDbDataAdapter("select * from table1 where id="+str1, con);
                 dA.Fill(dd, "table1");
                 showreport();
                 con.Close();
-            //}
-            //catch  //برای مدیریت خطا
-            //{
-            //    MessageBox.Show("خطا در اتصال به بانک اطلاعاتی");
-            //}
+            }
+            catch  //برای مدیریت خطا
+            {
+                MessageBox.Show("خطا در اتصال به بانک اطلاعاتی");
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)

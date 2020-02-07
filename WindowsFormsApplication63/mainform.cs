@@ -34,14 +34,12 @@ namespace Forpractice1
 
         private void button2_Click(object sender, EventArgs e)
         {
-            formlostejoo  frm2 = new formlostejoo (); // برای نمایش فرم
-            frm2.Show();
+            
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            formrahnamaei  frm3 = new formrahnamaei(); // برای نمایش فرم
-            frm3.Show();
+            
         }
 
         private void button1_Click_1(object sender, EventArgs e)
@@ -58,14 +56,12 @@ namespace Forpractice1
 
         private void button2_Click_1(object sender, EventArgs e)
         {
-            formlostejoo frm2 = new formlostejoo(); // برای نمایش فرم
-            frm2.Show();
+          
         }
 
         private void button4_Click_1(object sender, EventArgs e)
         {
-            formrahnamaei frm3 = new formrahnamaei(); // برای نمایش فرم
-            frm3.Show();
+           
         }
 
         private void button5_Click_1(object sender, EventArgs e)

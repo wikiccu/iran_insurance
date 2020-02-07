@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mainform));
             this.button1 = new DevComponents.DotNetBar.ButtonX();
             this.button3 = new DevComponents.DotNetBar.ButtonX();
-            this.button2 = new DevComponents.DotNetBar.ButtonX();
             this.button5 = new DevComponents.DotNetBar.ButtonX();
             this.SuspendLayout();
             // 
@@ -50,29 +49,18 @@
             // 
             this.button3.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.button3.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.button3.Location = new System.Drawing.Point(911, 88);
+            this.button3.Location = new System.Drawing.Point(884, 88);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(104, 37);
+            this.button3.Size = new System.Drawing.Size(131, 37);
             this.button3.TabIndex = 6;
-            this.button3.Text = "مشتریان";
+            this.button3.Text = "گزارش مشتریان";
             this.button3.Click += new System.EventHandler(this.button3_Click_1);
-            // 
-            // button2
-            // 
-            this.button2.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.button2.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.button2.Location = new System.Drawing.Point(911, 131);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(104, 38);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "جست و جو";
-            this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // button5
             // 
             this.button5.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.button5.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.button5.Location = new System.Drawing.Point(911, 175);
+            this.button5.Location = new System.Drawing.Point(911, 131);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(104, 38);
             this.button5.TabIndex = 9;
@@ -87,7 +75,6 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1027, 567);
             this.Controls.Add(this.button5);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -103,7 +90,6 @@
 
         private DevComponents.DotNetBar.ButtonX button1;
         private DevComponents.DotNetBar.ButtonX button3;
-        private DevComponents.DotNetBar.ButtonX button2;
         private DevComponents.DotNetBar.ButtonX button5;
     }
 }
