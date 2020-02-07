@@ -44,5 +44,10 @@ namespace Forpractice1
             }
             
         }
+
+        private void formlostejoo_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
