@@ -363,6 +363,11 @@ namespace Forpractice1
                 textBox1.Focus();
             }
         }
+        private void comboBoxEx1_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+
+
+        }
 
   
 
