@@ -73,8 +73,8 @@ C:\Users\saeed\Documents\GitHub\iran_insurance\WindowsFormsApplication63\obj\x86
 C:\Users\saeed\Documents\GitHub\iran_insurance\WindowsFormsApplication63\bin\x86\Debug\WindowsFormsApplication63.exe
 C:\Users\saeed\Documents\GitHub\iran_insurance\WindowsFormsApplication63\bin\x86\Debug\WindowsFormsApplication63.pdb
 C:\Users\saeed\Documents\GitHub\iran_insurance\WindowsFormsApplication63\bin\x86\Debug\DevComponents.DotNetBar2.dll
-C:\Users\saeed\Documents\GitHub\iran_insurance\WindowsFormsApplication63\obj\x86\Debug\WindowsFormsApplication63.csprojResolveAssemblyReference.cache
 C:\Users\saeed\Documents\GitHub\iran_insurance\WindowsFormsApplication63\obj\x86\Debug\Forpractice1.Form1.resources
 C:\Users\saeed\Documents\GitHub\iran_insurance\WindowsFormsApplication63\obj\x86\Debug\Forpractice1.formmoshtari.resources
 C:\Users\saeed\Documents\GitHub\iran_insurance\WindowsFormsApplication63\obj\x86\Debug\WindowsFormsApplication63.Properties.Resources.resources
 C:\Users\saeed\Documents\GitHub\iran_insurance\WindowsFormsApplication63\obj\x86\Debug\WindowsFormsApplication63.csproj.GenerateResource.Cache
+C:\Users\saeed\Documents\GitHub\iran_insurance\WindowsFormsApplication63\obj\x86\Debug\Forpractice1.frmChek.resources

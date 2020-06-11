@@ -43,13 +43,26 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.groupPanel2 = new DevComponents.DotNetBar.Controls.GroupPanel();
-            this.labelX6 = new DevComponents.DotNetBar.LabelX();
+            this.comboBoxEx2 = new DevComponents.DotNetBar.Controls.ComboBoxEx();
+            this.comboItem4 = new DevComponents.Editors.ComboItem();
+            this.comboItem5 = new DevComponents.Editors.ComboItem();
+            this.comboItem6 = new DevComponents.Editors.ComboItem();
+            this.comboItem7 = new DevComponents.Editors.ComboItem();
+            this.comboItem8 = new DevComponents.Editors.ComboItem();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.labelX13 = new DevComponents.DotNetBar.LabelX();
             this.labelX5 = new DevComponents.DotNetBar.LabelX();
             this.labelX4 = new DevComponents.DotNetBar.LabelX();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.labelX6 = new DevComponents.DotNetBar.LabelX();
             this.groupPanel3 = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.txtmobile = new System.Windows.Forms.TextBox();
+            this.labelX3 = new DevComponents.DotNetBar.LabelX();
+            this.comboBoxEx1 = new DevComponents.DotNetBar.Controls.ComboBoxEx();
+            this.comboItem1 = new DevComponents.Editors.ComboItem();
+            this.comboItem2 = new DevComponents.Editors.ComboItem();
+            this.comboItem3 = new DevComponents.Editors.ComboItem();
             this.labelX11 = new DevComponents.DotNetBar.LabelX();
             this.labelX10 = new DevComponents.DotNetBar.LabelX();
             this.labelX9 = new DevComponents.DotNetBar.LabelX();
@@ -64,13 +77,6 @@
             this.btnnamayesh = new DevComponents.DotNetBar.ButtonX();
             this.btnhazf = new DevComponents.DotNetBar.ButtonX();
             this.button4 = new DevComponents.DotNetBar.ButtonX();
-            this.comboBoxEx1 = new DevComponents.DotNetBar.Controls.ComboBoxEx();
-            this.comboItem1 = new DevComponents.Editors.ComboItem();
-            this.comboItem2 = new DevComponents.Editors.ComboItem();
-            this.comboItem3 = new DevComponents.Editors.ComboItem();
-            this.labelX3 = new DevComponents.DotNetBar.LabelX();
-            this.txtmobile = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupPanel1.SuspendLayout();
             this.groupPanel2.SuspendLayout();
@@ -247,11 +253,12 @@
             // 
             this.groupPanel2.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
-            this.groupPanel2.Controls.Add(this.textBox3);
+            this.groupPanel2.Controls.Add(this.comboBoxEx2);
+            this.groupPanel2.Controls.Add(this.textBox1);
+            this.groupPanel2.Controls.Add(this.labelX13);
             this.groupPanel2.Controls.Add(this.labelX5);
             this.groupPanel2.Controls.Add(this.labelX4);
             this.groupPanel2.Controls.Add(this.textBox2);
-            this.groupPanel2.Controls.Add(this.textBox1);
             this.groupPanel2.Controls.Add(this.label4);
             this.groupPanel2.Location = new System.Drawing.Point(388, 6);
             this.groupPanel2.Name = "groupPanel2";
@@ -278,18 +285,68 @@
             this.groupPanel2.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
             this.groupPanel2.TabIndex = 26;
             this.groupPanel2.Text = "اطلاعات پرداخت";
-            this.groupPanel2.Visible = false;
             // 
-            // labelX6
+            // comboBoxEx2
             // 
-            this.labelX6.BackColor = System.Drawing.Color.Transparent;
-            this.labelX6.Font = new System.Drawing.Font("B Titr", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.labelX6.Location = new System.Drawing.Point(239, 257);
-            this.labelX6.Name = "labelX6";
-            this.labelX6.Size = new System.Drawing.Size(91, 31);
-            this.labelX6.TabIndex = 37;
-            this.labelX6.Text = "نوع پرداخت";
-            this.labelX6.TextAlignment = System.Drawing.StringAlignment.Far;
+            this.comboBoxEx2.DisplayMember = "Text";
+            this.comboBoxEx2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.comboBoxEx2.Font = new System.Drawing.Font("B Titr", 12F, System.Drawing.FontStyle.Bold);
+            this.comboBoxEx2.FormattingEnabled = true;
+            this.comboBoxEx2.ItemHeight = 30;
+            this.comboBoxEx2.Items.AddRange(new object[] {
+            this.comboItem4,
+            this.comboItem5,
+            this.comboItem6,
+            this.comboItem7,
+            this.comboItem8});
+            this.comboBoxEx2.Location = new System.Drawing.Point(99, 5);
+            this.comboBoxEx2.Name = "comboBoxEx2";
+            this.comboBoxEx2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.comboBoxEx2.Size = new System.Drawing.Size(70, 36);
+            this.comboBoxEx2.TabIndex = 45;
+            this.comboBoxEx2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.comboBoxEx2_KeyDown);
+            // 
+            // comboItem4
+            // 
+            this.comboItem4.Text = "1";
+            // 
+            // comboItem5
+            // 
+            this.comboItem5.Text = "2";
+            // 
+            // comboItem6
+            // 
+            this.comboItem6.Text = "3";
+            // 
+            // comboItem7
+            // 
+            this.comboItem7.Text = "4";
+            // 
+            // comboItem8
+            // 
+            this.comboItem8.Text = "5";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("B Titr", 12F, System.Drawing.FontStyle.Bold);
+            this.textBox1.Location = new System.Drawing.Point(13, 76);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.textBox1.Size = new System.Drawing.Size(156, 36);
+            this.textBox1.TabIndex = 39;
+            this.textBox1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox1_KeyDown_1);
+            // 
+            // labelX13
+            // 
+            this.labelX13.BackColor = System.Drawing.Color.Transparent;
+            this.labelX13.Font = new System.Drawing.Font("B Titr", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.labelX13.Location = new System.Drawing.Point(230, 76);
+            this.labelX13.Name = "labelX13";
+            this.labelX13.Size = new System.Drawing.Size(103, 31);
+            this.labelX13.TabIndex = 38;
+            this.labelX13.Text = "پرداختی نقدی";
+            this.labelX13.TextAlignment = System.Drawing.StringAlignment.Far;
             // 
             // labelX5
             // 
@@ -323,17 +380,7 @@
             this.textBox2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.textBox2.Size = new System.Drawing.Size(156, 36);
             this.textBox2.TabIndex = 18;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("B Titr", 12F, System.Drawing.FontStyle.Bold);
-            this.textBox1.Location = new System.Drawing.Point(13, 82);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.textBox1.Size = new System.Drawing.Size(156, 36);
-            this.textBox1.TabIndex = 17;
-            this.textBox1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox1_KeyDown);
+            this.textBox2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox2_KeyDown);
             // 
             // label4
             // 
@@ -343,6 +390,17 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(0, 13);
             this.label4.TabIndex = 16;
+            // 
+            // labelX6
+            // 
+            this.labelX6.BackColor = System.Drawing.Color.Transparent;
+            this.labelX6.Font = new System.Drawing.Font("B Titr", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.labelX6.Location = new System.Drawing.Point(239, 257);
+            this.labelX6.Name = "labelX6";
+            this.labelX6.Size = new System.Drawing.Size(91, 31);
+            this.labelX6.TabIndex = 37;
+            this.labelX6.Text = "نوع پرداخت";
+            this.labelX6.TextAlignment = System.Drawing.StringAlignment.Far;
             // 
             // groupPanel3
             // 
@@ -386,6 +444,59 @@
             this.groupPanel3.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
             this.groupPanel3.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
             this.groupPanel3.TabIndex = 27;
+            // 
+            // txtmobile
+            // 
+            this.txtmobile.Font = new System.Drawing.Font("B Titr", 12F, System.Drawing.FontStyle.Bold);
+            this.txtmobile.Location = new System.Drawing.Point(52, 213);
+            this.txtmobile.Margin = new System.Windows.Forms.Padding(2);
+            this.txtmobile.Name = "txtmobile";
+            this.txtmobile.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtmobile.Size = new System.Drawing.Size(148, 36);
+            this.txtmobile.TabIndex = 44;
+            this.txtmobile.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtmobile_KeyDown);
+            // 
+            // labelX3
+            // 
+            this.labelX3.BackColor = System.Drawing.Color.Transparent;
+            this.labelX3.Font = new System.Drawing.Font("B Titr", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.labelX3.Location = new System.Drawing.Point(242, 218);
+            this.labelX3.Name = "labelX3";
+            this.labelX3.Size = new System.Drawing.Size(91, 31);
+            this.labelX3.TabIndex = 43;
+            this.labelX3.Text = "شماره همراه";
+            this.labelX3.TextAlignment = System.Drawing.StringAlignment.Far;
+            // 
+            // comboBoxEx1
+            // 
+            this.comboBoxEx1.DisplayMember = "Text";
+            this.comboBoxEx1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.comboBoxEx1.Font = new System.Drawing.Font("B Titr", 12F, System.Drawing.FontStyle.Bold);
+            this.comboBoxEx1.FormattingEnabled = true;
+            this.comboBoxEx1.ItemHeight = 30;
+            this.comboBoxEx1.Items.AddRange(new object[] {
+            this.comboItem1,
+            this.comboItem2,
+            this.comboItem3});
+            this.comboBoxEx1.Location = new System.Drawing.Point(3, 257);
+            this.comboBoxEx1.Name = "comboBoxEx1";
+            this.comboBoxEx1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.comboBoxEx1.Size = new System.Drawing.Size(198, 36);
+            this.comboBoxEx1.TabIndex = 42;
+            this.comboBoxEx1.SelectedIndexChanged += new System.EventHandler(this.comboBoxEx1_SelectedIndexChanged_1);
+            this.comboBoxEx1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.comboBoxEx1_KeyDown_1);
+            // 
+            // comboItem1
+            // 
+            this.comboItem1.Text = "نقد";
+            // 
+            // comboItem2
+            // 
+            this.comboItem2.Text = "نقد و چک ";
+            // 
+            // comboItem3
+            // 
+            this.comboItem3.Text = "چک";
             // 
             // labelX11
             // 
@@ -435,21 +546,21 @@
             // 
             this.labelX7.BackColor = System.Drawing.Color.Transparent;
             this.labelX7.Font = new System.Drawing.Font("B Titr", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.labelX7.Location = new System.Drawing.Point(277, 172);
+            this.labelX7.Location = new System.Drawing.Point(255, 172);
             this.labelX7.Name = "labelX7";
-            this.labelX7.Size = new System.Drawing.Size(53, 31);
+            this.labelX7.Size = new System.Drawing.Size(75, 31);
             this.labelX7.TabIndex = 37;
-            this.labelX7.Text = "مبلغ";
+            this.labelX7.Text = "قیمت بیمه ";
             this.labelX7.TextAlignment = System.Drawing.StringAlignment.Far;
             // 
             // Codemeli
             // 
             this.Codemeli.Font = new System.Drawing.Font("B Titr", 12F, System.Drawing.FontStyle.Bold);
-            this.Codemeli.Location = new System.Drawing.Point(52, 87);
+            this.Codemeli.Location = new System.Drawing.Point(83, 87);
             this.Codemeli.Margin = new System.Windows.Forms.Padding(2);
             this.Codemeli.Name = "Codemeli";
             this.Codemeli.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.Codemeli.Size = new System.Drawing.Size(148, 36);
+            this.Codemeli.Size = new System.Drawing.Size(117, 36);
             this.Codemeli.TabIndex = 21;
             this.Codemeli.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Codemeli_KeyDown);
             // 
@@ -467,11 +578,11 @@
             // txtname
             // 
             this.txtname.Font = new System.Drawing.Font("B Titr", 12F, System.Drawing.FontStyle.Bold);
-            this.txtname.Location = new System.Drawing.Point(76, 2);
+            this.txtname.Location = new System.Drawing.Point(93, 2);
             this.txtname.Margin = new System.Windows.Forms.Padding(2);
             this.txtname.Name = "txtname";
             this.txtname.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtname.Size = new System.Drawing.Size(124, 36);
+            this.txtname.Size = new System.Drawing.Size(107, 36);
             this.txtname.TabIndex = 18;
             this.txtname.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtname_KeyDown);
             // 
@@ -489,11 +600,11 @@
             // txtfamily
             // 
             this.txtfamily.Font = new System.Drawing.Font("B Titr", 12F, System.Drawing.FontStyle.Bold);
-            this.txtfamily.Location = new System.Drawing.Point(28, 44);
+            this.txtfamily.Location = new System.Drawing.Point(52, 44);
             this.txtfamily.Margin = new System.Windows.Forms.Padding(2);
             this.txtfamily.Name = "txtfamily";
             this.txtfamily.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtfamily.Size = new System.Drawing.Size(172, 36);
+            this.txtfamily.Size = new System.Drawing.Size(148, 36);
             this.txtfamily.TabIndex = 20;
             this.txtfamily.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtfamily_KeyDown);
             // 
@@ -545,72 +656,12 @@
             this.button4.Text = "گزارش";
             this.button4.Click += new System.EventHandler(this.button4_Click_1);
             // 
-            // comboBoxEx1
-            // 
-            this.comboBoxEx1.DisplayMember = "Text";
-            this.comboBoxEx1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.comboBoxEx1.Font = new System.Drawing.Font("B Titr", 12F, System.Drawing.FontStyle.Bold);
-            this.comboBoxEx1.FormattingEnabled = true;
-            this.comboBoxEx1.ItemHeight = 30;
-            this.comboBoxEx1.Items.AddRange(new object[] {
-            this.comboItem1,
-            this.comboItem2,
-            this.comboItem3});
-            this.comboBoxEx1.Location = new System.Drawing.Point(3, 257);
-            this.comboBoxEx1.Name = "comboBoxEx1";
-            this.comboBoxEx1.Size = new System.Drawing.Size(198, 36);
-            this.comboBoxEx1.TabIndex = 42;
-            this.comboBoxEx1.SelectedIndexChanged += new System.EventHandler(this.comboBoxEx1_SelectedIndexChanged_1);
-            // 
-            // comboItem1
-            // 
-            this.comboItem1.Text = "نقد";
-            // 
-            // comboItem2
-            // 
-            this.comboItem2.Text = "نقد و چک ";
-            // 
-            // comboItem3
-            // 
-            this.comboItem3.Text = "چک";
-            // 
-            // labelX3
-            // 
-            this.labelX3.BackColor = System.Drawing.Color.Transparent;
-            this.labelX3.Font = new System.Drawing.Font("B Titr", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.labelX3.Location = new System.Drawing.Point(242, 218);
-            this.labelX3.Name = "labelX3";
-            this.labelX3.Size = new System.Drawing.Size(91, 31);
-            this.labelX3.TabIndex = 43;
-            this.labelX3.Text = "شماره همراه";
-            this.labelX3.TextAlignment = System.Drawing.StringAlignment.Far;
-            // 
-            // txtmobile
-            // 
-            this.txtmobile.Font = new System.Drawing.Font("B Titr", 12F, System.Drawing.FontStyle.Bold);
-            this.txtmobile.Location = new System.Drawing.Point(3, 213);
-            this.txtmobile.Margin = new System.Windows.Forms.Padding(2);
-            this.txtmobile.Name = "txtmobile";
-            this.txtmobile.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtmobile.Size = new System.Drawing.Size(197, 36);
-            this.txtmobile.TabIndex = 44;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Font = new System.Drawing.Font("B Titr", 12F, System.Drawing.FontStyle.Bold);
-            this.textBox3.Location = new System.Drawing.Point(13, 2);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.textBox3.Size = new System.Drawing.Size(55, 36);
-            this.textBox3.TabIndex = 37;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(1083, 589);
+            this.ClientSize = new System.Drawing.Size(1096, 589);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.btnhazf);
             this.Controls.Add(this.btnnamayesh);
@@ -656,7 +707,6 @@
         private DevComponents.DotNetBar.LabelX labelX5;
         private DevComponents.DotNetBar.LabelX labelX4;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label4;
         private DevComponents.DotNetBar.Controls.GroupPanel groupPanel3;
         private System.Windows.Forms.TextBox Codemeli;
@@ -684,7 +734,14 @@
         private DevComponents.Editors.ComboItem comboItem1;
         private DevComponents.Editors.ComboItem comboItem2;
         private DevComponents.Editors.ComboItem comboItem3;
-        private System.Windows.Forms.TextBox textBox3;
+        public System.Windows.Forms.TextBox textBox1;
+        private DevComponents.DotNetBar.LabelX labelX13;
+        public DevComponents.DotNetBar.Controls.ComboBoxEx comboBoxEx2;
+        private DevComponents.Editors.ComboItem comboItem4;
+        private DevComponents.Editors.ComboItem comboItem5;
+        private DevComponents.Editors.ComboItem comboItem6;
+        private DevComponents.Editors.ComboItem comboItem7;
+        private DevComponents.Editors.ComboItem comboItem8;
 
     }
 }

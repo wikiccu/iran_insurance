@@ -127,6 +127,12 @@
     <Compile Include="formmoshtari.designer.cs">
       <DependentUpon>formmoshtari.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmChek.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChek.Designer.cs">
+      <DependentUpon>frmChek.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="bin\CrystalReport1.rpt">
@@ -138,6 +144,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formmoshtari.resx">
       <DependentUpon>formmoshtari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChek.resx">
+      <DependentUpon>frmChek.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

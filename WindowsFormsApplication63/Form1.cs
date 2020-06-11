@@ -8,6 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.Data.OleDb;
 using System.Globalization;
+
  
 
 namespace Forpractice1
@@ -15,6 +16,8 @@ namespace Forpractice1
     public partial class Form1 : Form
     {
         string intToPass;
+        string noe;
+        
         public Form1()
         {
             InitializeComponent();
@@ -33,7 +36,7 @@ namespace Forpractice1
 
         private void btnsabt_Click(object sender, EventArgs e)
         {
-            //string noe;
+            
             //try  //برای مدیریت خطا
             //{
             OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + Application.StartupPath + "\\Database.accdb");  //کدهای اتصال به پایگاه داده ها
@@ -49,7 +52,16 @@ namespace Forpractice1
             //    noe = "چک";
 
             //}
-            //com.CommandText = "insert into table1(name,family,mobile,codemeli,noebime,Price,noepardakht,pardakhti,baghimande) values('" + txtname.Text + "','" + txtfamily.Text + "','" + txtmobile.Text + "','" + Codemeli.Text + "','" + txtnobime.Text + "','" + Price.Text + "','" + noe + "','" + textBox1.Text + "','" + textBox2.Text + "')"; // کد درج در پایگاه داده ها
+            if (comboBoxEx1.SelectedIndex == 0)
+            {
+                noe = "نقد";
+            }
+            else if (comboBoxEx1.SelectedIndex == 1)
+            {
+                noe = "نقد و چک";
+            }
+
+            com.CommandText = "insert into table1(name,family,mobile,codemeli,noebime,Price,noepardakht,baghimande) values('" + txtname.Text + "','" + txtfamily.Text + "','" + txtmobile.Text + "','" + Codemeli.Text + "','" + txtnobime.Text + "','" + Price.Text + "','" + noe + "','" +  textBox2.Text + "')"; // کد درج در پایگاه داده ها
             com.Connection = con;
             com.ExecuteNonQuery();
             con.Close();
@@ -60,7 +72,7 @@ namespace Forpractice1
             txtnobime.Clear();
             Codemeli.Clear();
             Price.Clear();
-            textBox1.Clear();
+           // textBox1.Clear();
             textBox2.Clear();
             //}
             //catch  //برای مدیریت خطا
@@ -175,8 +187,8 @@ namespace Forpractice1
         {
             try
             {
-                int myInt = int.Parse(Price.Text) - int.Parse(textBox1.Text);
-                textBox2.Text = myInt.ToString();
+               // int myInt = int.Parse(Price.Text) - int.Parse(textBox1.Text);
+               // textBox2.Text = myInt.ToString();
             }
             catch
             {
@@ -343,7 +355,7 @@ namespace Forpractice1
         {
             if (e.KeyCode == Keys.Enter)
             {
-                comboBoxEx1.Focus();
+                txtmobile.Focus();
             }
 
         }
@@ -352,7 +364,7 @@ namespace Forpractice1
         {
             if (e.KeyCode == Keys.Enter)
             {
-                textBox1.Focus();
+                //textBox1.Focus();
             }
         }
 
@@ -360,18 +372,93 @@ namespace Forpractice1
         {
             if (e.KeyCode == Keys.Enter)
             {
-                textBox1.Focus();
+                //textBox1.Focus();
             }
         }
         private void comboBoxEx1_SelectedIndexChanged_1(object sender, EventArgs e)
         {
+            if (comboBoxEx1.SelectedIndex == 0)
+            {
+                comboBoxEx2.Enabled = false;
+                textBox1.Enabled = true;
+
+            }
+            else if (comboBoxEx1.SelectedIndex == 1)
+            {
+                comboBoxEx2.Enabled = true;
+                textBox1.Enabled = true;
+
+            }
+            else if (comboBoxEx1.SelectedIndex == 2)
+            {
+                textBox1.Enabled = false;
+                comboBoxEx2.Enabled = true;
+
+            }
+
 
 
         }
 
-  
+        private void txtmobile_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                comboBoxEx1.Focus();
+            }
+            
+        }
 
+        private void comboBoxEx1_KeyDown_1(object sender, KeyEventArgs e)
+        {
+            if (comboBoxEx1.SelectedIndex == 0 && e.KeyCode == Keys.Enter)
+            {
+                textBox1.Focus();
+            }
+            else if (comboBoxEx1.SelectedIndex == 1 && e.KeyCode == Keys.Enter)
+            {
+                comboBoxEx2.Focus();
+            }
+            else if (comboBoxEx1.SelectedIndex == 2 && e.KeyCode == Keys.Enter)
+            {
+                comboBoxEx2.Focus();
+            }
 
+        }
+
+        private void textBox1_KeyDown_1(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                int t;
+                t = int.Parse(Price.Text) - int.Parse(textBox1.Text);
+                textBox2.Text = t.ToString();
+                textBox2.Focus();
+            }
+        }
+
+        private void textBox2_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnsabt_Click(sender, e);
+            }
+        }
+
+        private void textBox3_KeyDown(object sender, KeyEventArgs e)
+        {
+            
+        }
+        private void comboBoxEx2_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                frmChek frm = new frmChek();
+                frm.Owner = this;
+                textBox1.Tag = comboBoxEx2.SelectedText;
+                frm.Show();
+            }
+        }
 
     }
 
